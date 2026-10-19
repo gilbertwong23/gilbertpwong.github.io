@@ -199,11 +199,6 @@
       to { background-position: 45px 45px; }
     }
 
-    header, main, footer {
-      position: relative;
-      z-index: 1;
-    }
-
     header {
       box-shadow: 0 4px 25px rgba(0, 190, 255, .08);
       backdrop-filter: blur(12px);
@@ -267,6 +262,54 @@
         transition-duration: .01ms !important;
       }
     }
+    
+/* FUTURISTIC NEON ROBOTICS LOOK */
+
+.logo,
+h1,
+h2 {
+  text-shadow:
+    0 0 8px rgba(0, 220, 255, 0.65),
+    0 0 24px rgba(0, 150, 255, 0.3);
+}
+
+.logo span,
+.eyebrow {
+  color: #59e8ff;
+}
+
+header {
+  border-bottom: 1px solid rgba(89, 216, 255, 0.35);
+  box-shadow: 0 4px 25px rgba(0, 180, 255, 0.08);
+}
+
+article,
+.card,
+.project-card {
+  border: 1px solid rgba(89, 216, 255, 0.3);
+  box-shadow:
+    0 0 15px rgba(0, 180, 255, 0.08),
+    inset 0 0 15px rgba(0, 180, 255, 0.025);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+article:hover,
+.card:hover,
+.project-card:hover {
+  border-color: #59d8ff;
+  box-shadow:
+    0 0 10px rgba(89, 216, 255, 0.45),
+    0 0 28px rgba(89, 216, 255, 0.18);
+}
+
+a {
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+a:hover {
+  text-shadow: 0 0 10px rgba(89, 216, 255, 0.8);
+}
+
 </style>
 </head>
 <body>
