@@ -163,6 +163,110 @@
       section { padding: 55px 0; }
     }
   </style>
+    /* NEON FUTURISTIC AI EFFECTS */
+
+    body {
+      background:
+        radial-gradient(ellipse at 15% 15%, rgba(0, 180, 255, 0.13), transparent 40%),
+        radial-gradient(ellipse at 85% 50%, rgba(140, 60, 255, 0.13), transparent 42%),
+        #080d18;
+      background-size: 180% 180%;
+      animation: neonBackground 12s ease-in-out infinite alternate;
+    }
+
+    @keyframes neonBackground {
+      0% { background-position: 0% 0%; }
+      100% { background-position: 100% 100%; }
+    }
+
+    /* Moving digital grid */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      background-image:
+        linear-gradient(rgba(89,216,255,.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(89,216,255,.055) 1px, transparent 1px);
+      background-size: 45px 45px;
+      animation: gridDrift 18s linear infinite;
+    }
+
+    @keyframes gridDrift {
+      from { background-position: 0 0; }
+      to { background-position: 45px 45px; }
+    }
+
+    header, main, footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    header {
+      box-shadow: 0 4px 25px rgba(0, 190, 255, .08);
+      backdrop-filter: blur(12px);
+    }
+
+    .logo {
+      text-shadow: 0 0 12px rgba(89,216,255,.65);
+    }
+
+    h1 span {
+      animation: neonText 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes neonText {
+      from {
+        filter: drop-shadow(0 0 3px rgba(89,216,255,.35));
+      }
+      to {
+        filter: drop-shadow(0 0 15px rgba(89,216,255,.85))
+                drop-shadow(0 0 25px rgba(157,140,255,.45));
+      }
+    }
+
+    .card {
+      box-shadow: 0 0 0 rgba(89,216,255,0);
+      transition: transform .3s ease, border-color .3s ease,
+                  box-shadow .3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-7px);
+      border-color: #59d8ff;
+      box-shadow: 0 0 22px rgba(89,216,255,.18),
+                  inset 0 0 18px rgba(89,216,255,.035);
+    }
+
+    .btn {
+      transition: all .25s ease;
+    }
+
+    .btn:hover {
+      box-shadow: 0 0 18px rgba(89,216,255,.45);
+      transform: translateY(-2px);
+    }
+
+    .tag {
+      transition: all .25s ease;
+    }
+
+    .tag:hover {
+      border-color: #59d8ff;
+      background: rgba(89,216,255,.1);
+      box-shadow: 0 0 12px rgba(89,216,255,.18);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: .01ms !important;
+      }
+    }
+
 </head>
 <body>
   <header>
