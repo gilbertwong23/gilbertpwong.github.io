@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080d18">
+  <meta name="description" content="Gilbert Wong's professional portfolio in sales, marketing, administration, video editing, and AI-assisted creative projects.">
+  <title>Gilbert Wong | Professional Portfolio</title>
+  <style>
+    :root {
+      --bg: #080d18;
+      --panel: #111a2b;
+      --text: #edf4ff;
+      --muted: #a5b4ca;
+      --blue: #59d8ff;
+      --purple: #9d8cff;
+    }
+
+    * { box-sizing: border-box; scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { color: white; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(8,13,24,.94);
+      border-bottom: 1px solid #233148;
+      padding: 16px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .logo { font-weight: 800; letter-spacing: 1px; }
+    .logo span { color: var(--blue); }
+
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: var(--muted); font-size: 14px; }
+
+    main { overflow: hidden; }
+    .container { width: min(1100px, 88%); margin: auto; }
+
+    .hero {
+      min-height: 76vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 90px 0;
+      background:
+        radial-gradient(ellipse at 85% 25%, #25396a 0, transparent 38%),
+        radial-gradient(ellipse at 15% 80%, #123847 0, transparent 35%);
+    }
+
+    .eyebrow {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: 1.08;
+      margin: 18px 0;
+      letter-spacing: -3px;
+    }
+
+    h1 span {
+      background: linear-gradient(90deg, var(--blue), var(--purple));
+      color: transparent;
+      background-clip: text;
+    }
+
+    .intro { max-width: 650px; color: var(--muted); font-size: 18px; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 24px; }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border: 1px solid var(--blue);
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .primary { background: var(--blue); color: #07111c; }
+    .primary:hover { background: white; color: #07111c; }
+
+    section { padding: 76px 0; }
+    .section-title { font-size: clamp(28px, 5vw, 42px); margin: 0 0 12px; }
+    .section-desc { color: var(--muted); max-width: 700px; margin-bottom: 30px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: linear-gradient(145deg, #131f33, #0d1422);
+      border: 1px solid #27354c;
+      border-radius: 14px;
+      padding: 25px;
+      transition: transform .2s, border-color .2s;
+    }
+
+    .card:hover { transform: translateY(-4px); border-color: var(--blue); }
+    .card h3 { margin-top: 0; }
+    .card p, .muted { color: var(--muted); }
+    .symbol { font-size: 26px; margin-bottom: 10px; }
+
+    .tag {
+      display: inline-block;
+      border: 1px solid #34445e;
+      color: var(--blue);
+      padding: 4px 10px;
+      margin: 5px 4px 0 0;
+      border-radius: 20px;
+      font-size: 12px;
+    }
+
+    .about {
+      border-top: 1px solid #202d41;
+      border-bottom: 1px solid #202d41;
+      background: #0c1321;
+    }
+
+    .contact-card {
+      padding: 30px;
+      background: var(--panel);
+      border: 1px solid #2c3c55;
+      border-radius: 14px;
+    }
+
+    footer {
+      border-top: 1px solid #233148;
+      padding: 25px 6%;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    @media (max-width: 600px) {
+      header { padding: 14px 6%; }
+      nav { gap: 12px; }
+      .hero { min-height: auto; padding: 75px 0; }
+      h1 { letter-spacing: -1px; }
+      section { padding: 55px 0; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a class="logo" href="#home">GILBERT<span>.</span>WONG</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container">
+        <div class="eyebrow">Professional Portfolio · Philippines</div>
+        <h1>Ideas into<br><span>Real Results.</span></h1>
+        <p class="intro">
+          Hello, I'm Gilbert Wong — a sales and marketing professional
+          with experience in business development, client relations,
+          and creative digital projects. I am ready to bring my
+          transferable skills, reliability, and willingness to learn
+          to a remote team.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore My Work ↘</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="eyebrow">A Little About Me</div>
+        <h2 class="section-title">Experience meets creativity.</h2>
+        <p class="section-desc">
+          My professional background includes sales, marketing,
+          account management, customer relations, and business
+          development. I also explore video editing, AI-assisted
+          content creation, and digital portfolio development.
+          I value clear communication, dependable work, and continuous
+          improvement.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <div class="symbol">◈</div>
+            <h3>Professional Experience</h3>
+            <p>Sales, client relationships, business development,
+              customer communication, and account support.</p>
+          </article>
+          <article class="card">
+            <div class="symbol">⌘</div>
+            <h3>Creative Development</h3>
+            <p>Personal projects involving video editing, original
+              artwork, and AI-assisted creative tools.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="eyebrow">What I Bring</div>
+        <h2 class="section-title">Skills & Capabilities</h2>
+        <p class="section-desc">
+          Practical skills built through professional experience
+          and independent learning.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <h3>Administration & Support</h3>
+            <p>Organization, documentation, customer communication,
+              follow-ups, and general administrative support.</p>
+          </article>
+          <article class="card">
+            <h3>Sales & Marketing</h3>
+            <p>Client relations, lead follow-up, appointment setting,
+              account management, and business development.</p>
+          </article>
+          <article class="card">
+            <h3>Video & Digital Content</h3>
+            <p>Video editing and creative content experiments using
+              tools such as CapCut, Canva, and Filmora.</p>
+          </article>
+          <article class="card">
+            <h3>AI-Assisted Creativity</h3>
+            <p>Exploring AI tools for visual concepts, storytelling,
+              and original content ideas.</p>
+          </article>
+        </div>
+        <div style="margin-top:22px">
+          <span class="tag">Client Relations</span>
+          <span class="tag">Appointment Setting</span>
+          <span class="tag">Microsoft Office</span>
+          <span class="tag">Canva</span>
+          <span class="tag">CapCut</span>
+          <span class="tag">Filmora</span>
+          <span class="tag">AI Creative Tools</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="projects">
+      <div class="container">
+        <div class="eyebrow">Selected Work</div>
+        <h2 class="section-title">Projects & Portfolio</h2>
+        <p class="section-desc">
+          A growing collection of personal projects and creative work.
+          Replace these placeholders with your actual samples.
+        </p>
+        <div class="grid">
+          <article class="card">
+            <div class="symbol">▶</div>
+            <h3>Video Editing</h3>
+            <p>Short-form edits, storytelling, and content experiments.</p>
+            <a href="https://www.youtube.com/channel/UC_3nY_w0o3eg5_fQsw6kaDQ"
+               target="_blank" rel="noopener noreferrer">View YouTube Channel ↗</a>
+          </article>
+          <article class="card">
+            <div class="symbol">✦</div>
+            <h3>Custom World Art</h3>
+            <p>Original drawings and creative artwork from my personal
+              art projects.</p>
+            <a href="https://www.facebook.com/gilbert.wong.10"
+               target="_blank" rel="noopener noreferrer">View Facebook ↗</a>
+          </article>
+          <article class="card">
+            <div class="symbol">◎</div>
+            <h3>Digital Portfolio</h3>
+            <p>Explore my existing portfolio and developing body of work.</p>
+            <a href="https://sites.google.com/view/gilbertpwong"
+               target="_blank" rel="noopener noreferrer">Visit My Portfolio ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="eyebrow">Let's Connect</div>
+          <h2 class="section-title">Open to opportunities.</h2>
+          <p class="section-desc">
+            I welcome opportunities in administrative support, virtual
+            assistance, customer relations, sales support, and creative
+            content projects.
+          </p>
+          <a class="btn primary"
+             href="https://www.facebook.com/gilbert.wong.10"
+             target="_blank" rel="noopener noreferrer">Connect on Facebook ↗</a>
+          <a class="btn" href="https://sites.google.com/view/gilbertpwong"
+             target="_blank" rel="noopener noreferrer">Portfolio ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Gilbert Wong · Professional Portfolio
+  </footer>
+</body>
+</html>
